@@ -15,7 +15,7 @@ export default () => (
             content="FraserHacks 2020 coming soon! Hosted at John Fraser Secondary School"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/banner.png" />
+        <meta property="og:image" content="/banner.jpg" />
         <meta property="og:image:width" content="1920" />
         <meta property="og:image:height" content="1080" />
         {/* Twitter */}
@@ -25,6 +25,6 @@ export default () => (
             property="twitter:description"
             content="FraserHacks 2020 coming soon! Hosted at John Fraser Secondary School"
         />
-        <meta property="twitter:image" content="/banner.png" />
+        <meta property="twitter:image" content="/banner.jpg" />
     </Helmet>
 )
