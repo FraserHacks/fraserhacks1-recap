@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Heading } from "@chakra-ui/core"
+import { Box } from "@chakra-ui/core"
 import Title from "./Title"
 import Slider from "./Slider"
 export default () => (
