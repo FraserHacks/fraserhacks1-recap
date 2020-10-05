@@ -9,7 +9,7 @@ const Footer = () => {
         query {
             organizers: file(relativePath: { eq: "organizers.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 2000, maxHeight: 700) {
+                    fluid(maxWidth: 2000, maxHeight: 700, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
