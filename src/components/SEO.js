@@ -26,5 +26,11 @@ export default () => (
             content="FraserHacks 2020 coming soon! Hosted at John Fraser Secondary School"
         />
         <meta property="twitter:image" content="/banner.jpg" />
+        <script
+            src="https://kit.fontawesome.com/c7434d4388.js"
+            crossorigin="anonymous"
+            defer
+            async
+        ></script>
     </Helmet>
 )
