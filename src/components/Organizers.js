@@ -23,7 +23,7 @@ const Footer = () => {
             flexDirection="column"
             alignItems="center"
         >
-            <Box px="10vw">
+            <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
                     sub="Lorem ipsum dolor"
                     main="Lorem ipsum dolor sit amet"
@@ -35,7 +35,10 @@ const Footer = () => {
                 </Text>
             </Box>
             <Box width="100%">
-                <Img fluid={organizers.childImageSharp.fluid} />
+                <Img
+                    fluid={organizers.childImageSharp.fluid}
+                    alt="Organizers"
+                />
             </Box>
         </Box>
     )

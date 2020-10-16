@@ -40,9 +40,9 @@ const Hero = () => {
                     justifyContent="center"
                     alignItems="center"
                     flexDirection="column"
-                    marginTop={["125px", "150px", "250px", "350px"]}
+                    mt={["125px", "150px", "250px", "350px"]}
                     textAlign="center"
-                    px="10vw"
+                    px={["20px", "50px", null, "10vw"]}
                 >
                     <Box marginBottom="20px">
                         <Heading size="md" color="white">

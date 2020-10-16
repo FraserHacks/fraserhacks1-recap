@@ -126,11 +126,15 @@ const Slider = () => {
             templateColumns="1000px 1000px 1000px"
             columnGap={5}
             width="100%"
-            height="500px"
+            height={["300px", "300px", "500px", "500px"]}
             overflowX="scroll"
             overflowY="hidden"
         >
-            <Grid templateRows="30% 30% 30%" rowGap={5} height="500px">
+            <Grid
+                templateRows="repeat(3, 30%)"
+                rowGap={5}
+                height={["300px", "300px", "500px", "500px"]}
+            >
                 <Grid templateColumns="6fr 4fr" columnGap={5}>
                     <Img fluid={c1.childImageSharp.fluid} />
                     <Img fluid={c9.childImageSharp.fluid} />
@@ -144,7 +148,11 @@ const Slider = () => {
                     <Img fluid={c6.childImageSharp.fluid} />
                 </Grid>
             </Grid>
-            <Grid templateRows="40% 54%" rowGap={5} height="500px">
+            <Grid
+                templateRows="40% 54%"
+                rowGap={5}
+                height={["300px", "300px", "500px", "500px"]}
+            >
                 <Grid templateColumns="4fr 6fr" columnGap={5}>
                     <Img fluid={c4.childImageSharp.fluid} />
                     <Img fluid={c10.childImageSharp.fluid} />
@@ -154,7 +162,11 @@ const Slider = () => {
                     <Img fluid={c2.childImageSharp.fluid} />
                 </Grid>
             </Grid>
-            <Grid templateRows="40% 54%" rowGap={5} height="500px">
+            <Grid
+                templateRows="40% 54%"
+                rowGap={5}
+                height={["300px", "300px", "500px", "500px"]}
+            >
                 <Grid templateColumns="7fr 3fr" columnGap={5}>
                     <Img fluid={c14.childImageSharp.fluid} />
                     <Img fluid={c13.childImageSharp.fluid} />
