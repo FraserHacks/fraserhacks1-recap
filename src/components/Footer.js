@@ -19,6 +19,7 @@ export default () => (
                         href="https://www.instagram.com/fraser_hacks/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Instagram"
                     >
                         <Box width="28px" height="28px">
                             <svg
@@ -49,6 +50,7 @@ export default () => (
                         href="https://www.facebook.com/fraserhacks/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Facebook"
                     >
                         <Box width="28px" height="28px">
                             <svg
@@ -79,6 +81,7 @@ export default () => (
                         href="https://discord.gg/4MDySsa"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Discord"
                     >
                         <Box width="28px" height="28px">
                             <svg
@@ -109,6 +112,7 @@ export default () => (
                         href="https://twitter.com/fraserhacks"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Twitter"
                     >
                         <Box width="28px" height="28px">
                             <svg
@@ -136,6 +140,7 @@ export default () => (
                     href="https://hackcodeofconduct.org/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="Code of Conduct"
                 >
                     <Heading color="white" size="md" fontWeight="600">
                         Code of Conduct
