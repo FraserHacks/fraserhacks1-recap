@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, PseudoBox, Heading, Img } from "@chakra-ui/core"
+import { Box, PseudoBox, Heading } from "@chakra-ui/core"
 
 export default () => (
     <Box px="10vw" py="75px" color="blue.500">
