@@ -16,7 +16,7 @@ const Hero = () => {
             }
             logo: file(relativePath: { eq: "logo.png" }) {
                 childImageSharp {
-                    fluid(maxWidth: 500, maxHeight: 500) {
+                    fluid(maxWidth: 500, maxHeight: 500, fit: INSIDE) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
