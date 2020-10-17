@@ -23,98 +23,98 @@ const Slider = () => {
         query {
             c1: file(relativePath: { eq: "c1.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c2: file(relativePath: { eq: "c2.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c3: file(relativePath: { eq: "c3.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c4: file(relativePath: { eq: "c4.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c5: file(relativePath: { eq: "c5.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c6: file(relativePath: { eq: "c6.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c7: file(relativePath: { eq: "c7.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c8: file(relativePath: { eq: "c8.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c9: file(relativePath: { eq: "c9.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c10: file(relativePath: { eq: "c10.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c11: file(relativePath: { eq: "c11.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c12: file(relativePath: { eq: "c12.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c13: file(relativePath: { eq: "c13.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             c14: file(relativePath: { eq: "c14.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 1000, quality: 100, srcSetBreakpoints: [200, 400, 800]) {
+                    fluid {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
