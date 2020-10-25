@@ -9,14 +9,14 @@ const Hero = () => {
         query {
             hero: file(relativePath: { eq: "hero.jpg" }) {
                 childImageSharp {
-                    fluid(maxWidth: 2000, maxHeight: 900) {
+                    fluid(maxWidth: 2000, maxHeight: 900, quality: 100) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
             }
             logo: file(relativePath: { eq: "logo.png" }) {
                 childImageSharp {
-                    fluid {
+                    fluid(maxWidth: 500, maxHeight: 500, fit: INSIDE) {
                         ...GatsbyImageSharpFluid_withWebp
                     }
                 }
@@ -40,9 +40,9 @@ const Hero = () => {
                     justifyContent="center"
                     alignItems="center"
                     flexDirection="column"
-                    marginTop={["125px", "150px", "250px", "350px"]}
+                    mt={["125px", "150px", "250px", "350px"]}
                     textAlign="center"
-                    px="10vw"
+                    px={["20px", "50px", null, "10vw"]}
                 >
                     <Box marginBottom="20px">
                         <Heading size="md" color="white">

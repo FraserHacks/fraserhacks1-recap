@@ -13,7 +13,7 @@ export default () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            px="10vw"
+            px={["20px", "50px", null, "10vw"]}
             pb="100px"
         >
             <Title sub="Lorem ipsum dolor" main="Lorem ipsum dolor sit amet" />
@@ -25,8 +25,7 @@ export default () => {
                 size="2xl"
                 color="white"
                 fontSize={["36px", "36px", "72px", "72px"]}
-                mt="50px"
-                mb="25px"
+                my="50px"
             >
                 123,456,789
             </Heading>
@@ -35,7 +34,7 @@ export default () => {
                 eiusmod tempor incididunt
             </Text>
             <Box
-                marginTop="100px"
+                mt="100px"
                 width={["80vw", null, null, "50vw"]}
                 height={["45vw", null, null, "28vw"]}
                 minWidth="200px"

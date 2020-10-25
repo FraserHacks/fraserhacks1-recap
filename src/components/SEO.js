@@ -26,5 +26,6 @@ export default () => (
             content="FraserHacks 2020 coming soon! Hosted at John Fraser Secondary School"
         />
         <meta property="twitter:image" content="/banner.jpg" />
+        <html lang="en" />
     </Helmet>
 )
