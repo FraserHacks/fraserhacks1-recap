@@ -134,42 +134,39 @@ const Slider = () => {
                 />
             </Box>
             <Box
-                height={["300px", "300px", "500px", "500px"]}
-                display="flex"
-                alignItems="center"
+                height={["250px", null, "500px", null]}
                 my={["50px", null, "100px"]}
+                overflow="hidden"
             >
-                <Box height={["250px", null, "500px", null]}>
-                    <Box>
-                        <Marquee velocity={15}>
-                            {top.map(photo => (
-                                <Box
-                                    width={["150px", null, "300px", null]}
-                                    height={["100px", null, "200px", null]}
-                                    overflow="hidden"
-                                    ml={["20px", null, "80px", null]}
-                                    mr="0px"
-                                >
-                                    <Img fluid={photo.childImageSharp.fluid} />
-                                </Box>
-                            ))}
-                        </Marquee>
-                    </Box>
-                    <Box mt={["20px", null, "80px", null]}>
-                        <Marquee velocity={15}>
-                            {bottom.map(photo => (
-                                <Box
-                                    width={["150px", null, "300px", null]}
-                                    height={["100px", null, "200px", null]}
-                                    overflow="hidden"
-                                    ml="0px"
-                                    mr={["20px", null, "80px", null]}
-                                >
-                                    <Img fluid={photo.childImageSharp.fluid} />
-                                </Box>
-                            ))}
-                        </Marquee>
-                    </Box>
+                <Box>
+                    <Marquee velocity={15}>
+                        {top.map(photo => (
+                            <Box
+                                width={["150px", null, "300px", null]}
+                                height={["100px", null, "200px", null]}
+                                overflow="hidden"
+                                ml={["20px", null, "80px", null]}
+                                mr="0px"
+                            >
+                                <Img fluid={photo.childImageSharp.fluid} />
+                            </Box>
+                        ))}
+                    </Marquee>
+                </Box>
+                <Box mt={["20px", null, "80px", null]}>
+                    <Marquee velocity={15}>
+                        {bottom.map(photo => (
+                            <Box
+                                width={["150px", null, "300px", null]}
+                                height={["100px", null, "200px", null]}
+                                overflow="hidden"
+                                ml="0px"
+                                mr={["20px", null, "80px", null]}
+                            >
+                                <Img fluid={photo.childImageSharp.fluid} />
+                            </Box>
+                        ))}
+                    </Marquee>
                 </Box>
             </Box>
         </Box>
