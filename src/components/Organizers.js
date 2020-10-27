@@ -22,7 +22,7 @@ const Footer = () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            py={["15px", null, "50px", null]}
+            mt={["15px", null, "50px", null]}
         >
             <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
