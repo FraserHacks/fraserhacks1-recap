@@ -22,13 +22,19 @@ const Footer = () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
+            py={["15px", null, "50px", null]}
         >
             <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
                     sub="Lorem ipsum dolor"
                     main="Lorem ipsum dolor sit amet"
                 />
-                <Text color="gray" maxWidth="600px" mt="25px" mb="100px">
+                <Text
+                    color="gray"
+                    maxWidth="600px"
+                    my="25px"
+                    mb={["25px", "50px", "100px", null]}
+                >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
