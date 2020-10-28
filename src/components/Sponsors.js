@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Marquee from "react-marquee-slider"
 import Title from "../components/Title"
 import { Box, Image, PseudoBox } from "@chakra-ui/core"
@@ -85,69 +85,53 @@ const sponsors = [
     },
 ]
 
-export default () => (
-    <Box py={["15px", null, "50px", null]}>
-        <Box px={["20px", "50px", null, "10vw"]}>
-            <Title sub="Lorem ipsum dolor" main="Lorem ipsum dolor sit amet" />
-        </Box>
-        <Box my="50px">
-            <Marquee velocity={5}>
-                {sponsors.map(sponsor => (
-                    <PseudoBox
-                        m="25px"
-                        height="125px"
-                        width="250px"
-                        transition="transform 0.5s"
-                        _hover={{ transform: "scale(1.05)" }}
-                        cursor="pointer"
-                        display="flex"
-                        justifyContent="center"
-                    >
-                        <a
-                            href={sponsor.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <Image
-                                src={sponsor.src}
-                                height="125px"
-                                width="auto"
-                                alt={sponsor.name}
-                            />
-                        </a>
-                    </PseudoBox>
-                ))}
-            </Marquee>
-        </Box>
-        {/* <Box px={["20px", "50px", null, "10vw"]}>
-            <Title sub="Lorem ipsum dolor" main="Lorem ipsum dolor sit amet" />
-        </Box>
-        <Marquee velocity={12}>
-            {sponsors.map(sponsor => (
-                <PseudoBox
-                    m="25px"
-                    height="125px"
-                    width="250px"
-                    transition="transform 0.5s"
-                    _hover={{ transform: "scale(1.05)" }}
-                    cursor="pointer"
-                    display="flex"
-                    justifyContent="center"
-                >
-                    <a
-                        href={sponsor.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <Image
-                            src={sponsor.src}
+export default () => {
+    const [velocity, setVelocity] = useState(15)
+    return (
+        <Box py={["15px", null, "50px", null]}>
+            <Box px={["20px", "50px", null, "10vw"]}>
+                <Title
+                    sub="Lorem ipsum dolor"
+                    main="Lorem ipsum dolor sit amet"
+                />
+            </Box>
+            <Box
+                my="50px"
+                onMouseEnter={() => {
+                    setVelocity(0)
+                }}
+                onMouseLeave={() => {
+                    setVelocity(15)
+                }}
+            >
+                <Marquee velocity={velocity}>
+                    {sponsors.map(sponsor => (
+                        <PseudoBox
+                            m="25px"
                             height="125px"
-                            width="auto"
-                            alt={sponsor.name}
-                        />
-                    </a>
-                </PseudoBox>
-            ))}
-        </Marquee> */}
-    </Box>
-)
+                            width="250px"
+                            transition="transform 0.5s"
+                            _hover={{ transform: "scale(1.05)" }}
+                            cursor="pointer"
+                            display="flex"
+                            justifyContent="center"
+                        >
+                            <a
+                                href={sponsor.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <Image
+                                    src={sponsor.src}
+                                    height="125px"
+                                    width="auto"
+                                    alt={sponsor.name}
+                                />
+                            </a>
+                        </PseudoBox>
+                    ))}
+                </Marquee>
+            </Box>
+        </Box>
+    )
+}

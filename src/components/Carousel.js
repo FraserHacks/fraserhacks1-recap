@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Box } from "@chakra-ui/core"
 import Title from "./Title"
 import { graphql, useStaticQuery } from "gatsby"
@@ -125,6 +125,7 @@ const Slider = () => {
     `)
     const top = [c1, c2, c3, c4, c5, c6, c7]
     const bottom = [c8, c9, c10, c11, c12, c13, c14]
+    const [velocity, setVelocity] = useState(15)
     return (
         <Box mt={["100px", null, "200px"]}>
             <Box px={["20px", "50px", null, "10vw"]}>
@@ -137,9 +138,15 @@ const Slider = () => {
                 height={["250px", null, "500px", null]}
                 my={["50px", null, "100px"]}
                 overflow="hidden"
+                onMouseEnter={() => {
+                    setVelocity(0)
+                }}
+                onMouseLeave={() => {
+                    setVelocity(15)
+                }}
             >
                 <Box>
-                    <Marquee velocity={15}>
+                    <Marquee velocity={velocity}>
                         {top.map(photo => (
                             <Box
                                 width={["150px", null, "300px", null]}
@@ -147,14 +154,15 @@ const Slider = () => {
                                 overflow="hidden"
                                 ml={["20px", null, "80px", null]}
                                 mr="0px"
+                                borderRadius="12px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
                         ))}
                     </Marquee>
                 </Box>
-                <Box mt={["20px", null, "80px", null]}>
-                    <Marquee velocity={15}>
+                <Box mt={["14px", null, "40px", null]}>
+                    <Marquee velocity={velocity}>
                         {bottom.map(photo => (
                             <Box
                                 width={["150px", null, "300px", null]}
@@ -162,6 +170,7 @@ const Slider = () => {
                                 overflow="hidden"
                                 ml="0px"
                                 mr={["20px", null, "80px", null]}
+                                borderRadius="12px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
