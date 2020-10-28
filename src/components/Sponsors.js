@@ -103,6 +103,7 @@ export default () => {
                 onMouseLeave={() => {
                     setVelocity(15)
                 }}
+                overflow="hidden"
             >
                 <Marquee velocity={velocity}>
                     {sponsors.map(sponsor => (

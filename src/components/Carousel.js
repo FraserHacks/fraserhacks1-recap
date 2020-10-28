@@ -149,12 +149,12 @@ const Slider = () => {
                     <Marquee velocity={velocity}>
                         {top.map(photo => (
                             <Box
-                                width={["150px", null, "300px", null]}
+                                width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
                                 overflow="hidden"
-                                ml={["20px", null, "80px", null]}
+                                ml={["20px", null, "60px", null]}
                                 mr="0px"
-                                borderRadius="12px"
+                                borderRadius="8px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
@@ -165,12 +165,12 @@ const Slider = () => {
                     <Marquee velocity={velocity}>
                         {bottom.map(photo => (
                             <Box
-                                width={["150px", null, "300px", null]}
+                                width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
                                 overflow="hidden"
                                 ml="0px"
-                                mr={["20px", null, "80px", null]}
-                                borderRadius="12px"
+                                mr={["20px", null, "60px", null]}
+                                borderRadius="8px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
