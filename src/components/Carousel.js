@@ -154,7 +154,7 @@ const Slider = () => {
                                 overflow="hidden"
                                 ml={["20px", null, "60px", null]}
                                 mr="0px"
-                                borderRadius="8px"
+                                borderRadius="4px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
@@ -170,7 +170,7 @@ const Slider = () => {
                                 overflow="hidden"
                                 ml="0px"
                                 mr={["20px", null, "60px", null]}
-                                borderRadius="8px"
+                                borderRadius="4px"
                             >
                                 <Img fluid={photo.childImageSharp.fluid} />
                             </Box>
