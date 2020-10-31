@@ -87,7 +87,7 @@ const sponsors = [
 
 export default () => {
     const [velocity, setVelocity] = useState(
-        window ? window.innerWidth / 30 : 15
+        typeof window !== `undefined` ? window.innerWidth / 30 : 15
     )
     return (
         <Box py={["15px", null, "50px", null]}>
@@ -103,7 +103,11 @@ export default () => {
                     setVelocity(0)
                 }}
                 onMouseLeave={() => {
-                    setVelocity(window ? window.innerWidth / 30 : 15)
+                    setVelocity(
+                        typeof window !== `undefined`
+                            ? window.innerWidth / 30
+                            : 15
+                    )
                 }}
                 overflow="hidden"
             >
