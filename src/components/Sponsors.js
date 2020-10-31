@@ -86,7 +86,7 @@ const sponsors = [
 ]
 
 export default () => {
-    const [velocity, setVelocity] = useState(15)
+    const [velocity, setVelocity] = useState(window.innerWidth / 30)
     return (
         <Box py={["15px", null, "50px", null]}>
             <Box px={["20px", "50px", null, "10vw"]}>
@@ -101,21 +101,22 @@ export default () => {
                     setVelocity(0)
                 }}
                 onMouseLeave={() => {
-                    setVelocity(15)
+                    setVelocity(window.innerWidth / 30)
                 }}
                 overflow="hidden"
             >
                 <Marquee velocity={velocity}>
                     {sponsors.map(sponsor => (
                         <PseudoBox
-                            m="25px"
+                            my="25px"
+                            mx="50px"
                             height="125px"
-                            width="250px"
                             transition="transform 0.5s"
                             _hover={{ transform: "scale(1.05)" }}
                             cursor="pointer"
                             display="flex"
                             justifyContent="center"
+                            alignContent="center"
                         >
                             <a
                                 href={sponsor.link}
@@ -124,9 +125,10 @@ export default () => {
                             >
                                 <Image
                                     src={sponsor.src}
-                                    height="125px"
-                                    width="auto"
                                     alt={sponsor.name}
+                                    width="auto"
+                                    height="125px"
+                                    objectFit="cover"
                                 />
                             </a>
                         </PseudoBox>
