@@ -125,7 +125,9 @@ const Slider = () => {
     `)
     const top = [c1, c2, c3, c4, c5, c6, c7]
     const bottom = [c8, c9, c10, c11, c12, c13, c14]
-    const [velocity, setVelocity] = useState(window.innerWidth / 50)
+    const [velocity, setVelocity] = useState(
+        window ? window.innerWidth / 50 : 15
+    )
     return (
         <Box mt={["100px", null, "200px"]}>
             <Box px={["20px", "50px", null, "10vw"]}>
@@ -142,7 +144,7 @@ const Slider = () => {
                     setVelocity(0)
                 }}
                 onMouseLeave={() => {
-                    setVelocity(window.innerWidth / 50)
+                    setVelocity(window ? window.innerWidth / 50 : 15)
                 }}
             >
                 <Box>
