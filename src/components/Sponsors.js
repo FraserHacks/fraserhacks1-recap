@@ -9,7 +9,7 @@ import leangap from "../assets/sponsors/leangap.svg"
 import oreilly from "../assets/sponsors/oreilly.svg"
 import shawee from "../assets/sponsors/shawee.svg"
 import stickermule from "../assets/sponsors/stickermule.svg"
-import TIG from "../assets/sponsors/TIG.svg"
+import TIG from "../assets/sponsors/TIG.png"
 import digitalocean from "../assets/sponsors/digitalocean.png"
 import discord from "../assets/sponsors/discord.png"
 import hyperx from "../assets/sponsors/hyperx.png"
@@ -134,6 +134,7 @@ export default () => {
                                     alt={sponsor.name}
                                     width="auto"
                                     height="125px"
+                                    py="20px"
                                     objectFit="cover"
                                 />
                             </a>
