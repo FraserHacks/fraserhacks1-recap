@@ -98,7 +98,7 @@ export default () => {
                 />
             </Box>
             <Box
-                my="50px"
+                mt="75px"
                 onMouseEnter={() => {
                     setVelocity(0)
                 }}
