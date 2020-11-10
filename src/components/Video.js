@@ -14,10 +14,10 @@ export default () => {
             flexDirection="column"
             alignItems="center"
             px={["20px", "50px", null, "10vw"]}
-            pb="100px"
+            py={["15px", null, "50px", null]}
         >
             <Title sub="Lorem ipsum dolor" main="Lorem ipsum dolor sit amet" />
-            <Text color="gray" marginTop="25px" maxWidth="600px">
+            <Text color="gray" marginTop="25px" maxWidth="600px" my="20px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </Text>
@@ -25,20 +25,20 @@ export default () => {
                 size="2xl"
                 color="white"
                 fontSize={["36px", "36px", "72px", "72px"]}
-                my="50px"
+                my="20px"
             >
                 123,456,789
             </Heading>
-            <Text color="gray" maxWidth="600px">
+            <Text color="gray" maxWidth="600px" my="20px">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt
             </Text>
             <Box
-                mt="100px"
                 width={["80vw", null, null, "50vw"]}
                 height={["45vw", null, null, "28vw"]}
                 minWidth="200px"
                 minHeight="113px"
+                my="20px"
             >
                 <Box ref={ref} height="100%">
                     {(rendered = rendered || inView)}
