@@ -5,7 +5,7 @@ export default () => (
     <Box
         px={["20px", "50px", null, "10vw"]}
         py={["25px", null, "75px", null]}
-        color="blue.500"
+        color="white"
     >
         <Box
             display="flex"
