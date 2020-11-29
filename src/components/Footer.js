@@ -2,7 +2,11 @@ import React from "react"
 import { Box, PseudoBox, Heading } from "@chakra-ui/core"
 
 export default () => (
-    <Box px={["20px", "50px", null, "10vw"]} py="75px" color="blue.500">
+    <Box
+        px={["20px", "50px", null, "10vw"]}
+        py={["25px", null, "75px", null]}
+        color="blue.500"
+    >
         <Box
             display="flex"
             flexDirection={["column", "column", "row", "row"]}
