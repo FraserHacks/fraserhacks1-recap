@@ -93,8 +93,8 @@ export default () => {
         <Box py={["15px", null, "50px", null]}>
             <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
-                    sub="Lorem ipsum dolor"
-                    main="Lorem ipsum dolor sit amet"
+                    sub="Sponsors"
+                    main="Thanks for Making FraserHacks Possible!"
                 />
             </Box>
             <Box
@@ -112,7 +112,7 @@ export default () => {
                 overflow="hidden"
             >
                 <Marquee velocity={velocity}>
-                    {sponsors.map(sponsor => (
+                    {sponsors.map((sponsor) => (
                         <PseudoBox
                             my="25px"
                             mx="50px"

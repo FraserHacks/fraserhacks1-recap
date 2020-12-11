@@ -131,10 +131,7 @@ const Slider = () => {
     return (
         <Box mt={["100px", null, "200px"]}>
             <Box px={["20px", "50px", null, "10vw"]}>
-                <Title
-                    sub="Lorem ipsum dolor"
-                    main="Lorem ipsum dolor sit amet"
-                />
+                <Title sub="10 Hours" main="125+ Hackers" />
             </Box>
             <Box
                 height={["250px", null, "500px", null]}
@@ -153,7 +150,7 @@ const Slider = () => {
             >
                 <Box>
                     <Marquee velocity={velocity}>
-                        {top.map(photo => (
+                        {top.map((photo) => (
                             <Box
                                 width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
@@ -169,7 +166,7 @@ const Slider = () => {
                 </Box>
                 <Box mt={["14px", null, "40px", null]}>
                     <Marquee velocity={velocity}>
-                        {bottom.map(photo => (
+                        {bottom.map((photo) => (
                             <Box
                                 width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
