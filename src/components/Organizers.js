@@ -36,7 +36,7 @@ const Footer = () => {
                     mb={["25px", "50px", "100px", null]}
                 >
                     Thank you to the teachers, sponsors, organizers, and most
-                    important, the hackers that made FraserHacks possible. 10
+                    importantly, the hackers that made FraserHacks possible. 10
                     hours of caffeine-fueled innovation would not have been
                     possible without you.
                     <br />
