@@ -90,7 +90,7 @@ export default () => {
         typeof window !== `undefined` ? window.innerWidth / 50 : 15
     )
     return (
-        <Box py={["15px", null, "50px", null]}>
+        <Box py={["30px", null, "100px", null]}>
             <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
                     sub="Sponsors"
@@ -112,7 +112,7 @@ export default () => {
                 overflow="hidden"
             >
                 <Marquee velocity={velocity}>
-                    {sponsors.map((sponsor) => (
+                    {sponsors.map(sponsor => (
                         <PseudoBox
                             my="25px"
                             mx="50px"

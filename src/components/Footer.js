@@ -4,7 +4,7 @@ import { Box, PseudoBox, Heading } from "@chakra-ui/core"
 export default () => (
     <Box
         px={["20px", "50px", null, "10vw"]}
-        py={["25px", null, "75px", null]}
+        py={["40px", null, "75px", null]}
         color="white"
     >
         <Box
@@ -139,16 +139,22 @@ export default () => (
                     </a>
                 </PseudoBox>
             </Box>
-            <Box mx="25px" mt={["20px", "20px", "0px", "0px"]}>
+            <Box mx="25px" mt={["30px", "30px", "0px", "0px"]}>
                 <a
                     href="https://hackcodeofconduct.org/"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Code of Conduct"
                 >
-                    <Heading color="white" size="md" fontWeight="600">
-                        Code of Conduct
-                    </Heading>
+                    <PseudoBox
+                        transition="color 0.25s"
+                        color="white"
+                        _hover={{ color: "blue.300" }}
+                    >
+                        <Heading size="md" fontWeight="600">
+                            Code of Conduct
+                        </Heading>
+                    </PseudoBox>
                 </a>
             </Box>
         </Box>
