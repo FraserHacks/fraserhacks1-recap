@@ -41,7 +41,8 @@ const Footer = () => {
                     possible without you.
                     <br />
                     <br />
-                    Stay safe, and keep on hacking!
+                    Stay safe, and keep on hacking! <br /> - The FraserHacks
+                    Organizing Team
                 </Text>
             </Box>
             <Box width="100%">
