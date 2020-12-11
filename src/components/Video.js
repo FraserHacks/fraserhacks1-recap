@@ -16,10 +16,10 @@ export default () => {
             px={["20px", "50px", null, "10vw"]}
             py={["15px", null, "50px", null]}
         >
-            <Title sub="Lorem ipsum dolor" main="Lorem ipsum dolor sit amet" />
+            <Title sub="7 Schools" main="From Across the Peel Region" />
             <Text color="gray" marginTop="25px" maxWidth="600px" my="20px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                FraserHacks 2019 was the largest hackathon in Mississauga, with
+                over 125+ students from across the Peel Region
             </Text>
             <Heading
                 size="2xl"
@@ -27,11 +27,12 @@ export default () => {
                 fontSize={["36px", "36px", "72px", "72px"]}
                 my="20px"
             >
-                123,456,789
+                29+ Hacks
             </Heading>
             <Text color="gray" maxWidth="600px" my="20px">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt
+                Hackers formed teams of 4 to build innovative solutions to some
+                of society's greatest problems. These included an AI Garbage
+                Sorter, AI Pancreatic Cancer Detector, and more!
             </Text>
             <Box
                 width={["80vw", null, null, "50vw"]}

@@ -26,8 +26,8 @@ const Footer = () => {
         >
             <Box px={["20px", "50px", null, "10vw"]}>
                 <Title
-                    sub="Lorem ipsum dolor"
-                    main="Lorem ipsum dolor sit amet"
+                    sub="FraserHacks 2019 was a blast"
+                    main="We'll see you all next year!"
                 />
                 <Text
                     color="gray"
@@ -35,9 +35,14 @@ const Footer = () => {
                     my="25px"
                     mb={["25px", "50px", "100px", null]}
                 >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    Thank you to the teachers, sponsors, organizers, and most
+                    importantly, the hackers that made FraserHacks possible. 10
+                    hours of caffeine-fueled innovation would not have been
+                    possible without you.
+                    <br />
+                    <br />
+                    Stay safe, and keep on hacking! <br /> - The FraserHacks
+                    Organizing Team
                 </Text>
             </Box>
             <Box width="100%">

@@ -46,11 +46,11 @@ const Hero = () => {
                 >
                     <Box marginBottom="20px">
                         <Heading size="md" color="white">
-                            Lorem ipsum dolor
+                            December 11
                         </Heading>
                     </Box>
                     <Heading size="2xl" color="white">
-                        Fraser Hacks 2019 Recap
+                        Fraser Hacks 2019
                     </Heading>
                 </Box>
                 <Box
