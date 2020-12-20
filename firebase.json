@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "target": "2019-recap",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}

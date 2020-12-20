@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "fraserhacks-15afa"
+  },
+  "targets": {
+    "fraserhacks-15afa": {
+      "hosting": {
+        "2019-recap": [
+          "fraserhacks-2019-recap"
+        ]
+      }
+    }
+  }
+}
