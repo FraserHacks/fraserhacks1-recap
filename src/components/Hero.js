@@ -45,17 +45,21 @@ const Hero = () => {
                     px={["20px", "50px", null, "10vw"]}
                 >
                     <Box marginBottom="20px">
-                        <Heading size="md" color="white">
+                        <Heading size="xl" color="white">
                             December 11
                         </Heading>
                     </Box>
-                    <Heading size="2xl" color="white">
+                    <Heading
+                        size="2xl"
+                        color="white"
+                        fontSize={["40px", null, "50px", "72px"]}
+                    >
                         Fraser Hacks 2019
                     </Heading>
                 </Box>
                 <Box
-                    marginTop={["75px", "125px", "150px", "225px"]}
-                    width={["40vw", null, "400px", "400px"]}
+                    marginTop={["50px", "150px", "150px", "200px"]}
+                    width={["40vw", "200px", "400px", "400px"]}
                     display="flex"
                     alignItems="center"
                 >

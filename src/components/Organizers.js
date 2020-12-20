@@ -22,9 +22,14 @@ const Footer = () => {
             display="flex"
             flexDirection="column"
             alignItems="center"
-            mt={["15px", null, "50px", null]}
+            mt={["30px", null, "50px", null]}
         >
-            <Box px={["20px", "50px", null, "10vw"]}>
+            <Box
+                px={["20px", "50px", null, "10vw"]}
+                display="flex"
+                flexDir="column"
+                alignItems="center"
+            >
                 <Title
                     sub="FraserHacks 2019 was a blast"
                     main="We'll see you all next year!"
@@ -32,8 +37,9 @@ const Footer = () => {
                 <Text
                     color="gray"
                     maxWidth="600px"
-                    my="25px"
+                    my="50px"
                     mb={["25px", "50px", "100px", null]}
+                    fontSize={["md", null, "xl", null]}
                 >
                     Thank you to the teachers, sponsors, organizers, and most
                     importantly, the hackers that made FraserHacks possible. 10

@@ -135,7 +135,7 @@ const Slider = () => {
             </Box>
             <Box
                 height={["250px", null, "500px", null]}
-                my={["50px", null, "100px"]}
+                mt={["50px", null, "100px"]}
                 overflow="hidden"
                 onMouseEnter={() => {
                     setVelocity(0)
@@ -150,7 +150,7 @@ const Slider = () => {
             >
                 <Box>
                     <Marquee velocity={velocity}>
-                        {top.map((photo) => (
+                        {top.map(photo => (
                             <Box
                                 width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
@@ -166,7 +166,7 @@ const Slider = () => {
                 </Box>
                 <Box mt={["14px", null, "40px", null]}>
                     <Marquee velocity={velocity}>
-                        {bottom.map((photo) => (
+                        {bottom.map(photo => (
                             <Box
                                 width={["200px", null, "350px", null]}
                                 height={["100px", null, "200px", null]}
