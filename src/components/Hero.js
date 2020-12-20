@@ -52,7 +52,7 @@ const Hero = () => {
                     <Heading
                         size="2xl"
                         color="white"
-                        fontSize={["40px", null, "50px", "90px"]}
+                        fontSize={["40px", null, "50px", "72px"]}
                     >
                         Fraser Hacks 2019
                     </Heading>
