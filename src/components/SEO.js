@@ -26,6 +26,7 @@ export default () => (
             content="FraserHacks 2020 coming soon! Hosted at John Fraser Secondary School"
         />
         <meta property="twitter:image" content="/banner.jpg" />
+        <script async defer data-domain="fraserhacks.ca" src="https://plausible.io/js/plausible.js"></script>
         <html lang="en" />
     </Helmet>
 )
