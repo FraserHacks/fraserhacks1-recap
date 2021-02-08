@@ -7,6 +7,7 @@ import Sponsors from "../components/Sponsors"
 import Organizers from "../components/Organizers"
 import Footer from "../components/Footer"
 import { Box } from "@chakra-ui/core"
+import "../components/scroll.css"
 
 export default () => {
     return (
